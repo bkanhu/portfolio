@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+:root{
+    --bg-dark-1: #131415;
+    --bg-dark-2: #09090e;
+    --text-color-dark: #09090e;
+    --text-color-white: #ffffff;
+    --asset-color: #ff002e;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    line-height: 2.1em;
+}
+nav,.container{
+    /* width: 85%; */
+    padding:1.2em 10em;
+}
+nav{
+    /* background-color: #ff002e; */
+}
+nav > div {
+    display: inline;
+
+    float: right;
+}
+nav > div > a{
+    padding: 5em 0.5em;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+/*hero section start here*/
+.row{
+    display: flex;
+}
+.col-lg-8{
+
+    flex: 60%;
+}
+.col-lg-4{
+    flex: 40%;
+}
+.hero{
+    margin: 5em 0;
+}
+.hero h1{
+    font-size: 2.5em;
+    /* font-weight: bolder; */
+    line-height: 2.6em;
+}
+.lead{
+    max-width: 550px;
+    line-height: 2.1em;
+}
+.hero ul{
+    margin-top: 2em;
+}
+.image-responsive{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 25px 25px 0 var(--asset-color);
+}
+.social{
+
+    margin-top: 2em;
+}
+.social a{
+    padding: .22em;
+}
+.social .fab{
+    font-size: 1.24em;
+    padding: .65em;
+    color: var(--text-color-white);
+    background-color: var(--bg-dark-1);
+    border-radius: 50%;
+}
+/*media query*/
+@media screen and (max-width:550px){
+    h1{
+        font-size: 1.8em !important;
+        line-height: 1em !important;
+        max-width: 80vw !important;
+    }
+    p{
+        font-size: 1.3em !important;
+    }
+}
+@media screen and (max-width:750px){
+    nav,.container{
+        margin:1.2em 1em;
+        padding: 0;
+    }
+    nav > div > a{
+        padding: 0.1em 0.1em;
+    }
+    nav > div {
+        display: inline;
+        float: none;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-lg-8,.col-lg-4{
+        flex: 100% !important;
+    }
+    .hamburger-icon{
+        display: block;
+        float: right;
+    }
+    .topnav a:not(:last-child) {display: none;}
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive .hamburger-icon{
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+}
+
