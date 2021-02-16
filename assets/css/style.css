@@ -205,6 +205,19 @@ nav > div > a{
 
     margin-bottom: 1.2em;
 }
+.card-tech span{
+
+    padding: 2.5px;
+}
+.card span:first-child{
+    background-color: #ade;
+}
+.card span:nth-child(2){
+    background-color: #dce;
+}
+.card span:nth-child(3){
+    background-color: #adb;
+}
 .card a{
     /* margin: 2.83em 0 !important; */
     background: var(--bg-dark-1);
@@ -305,10 +318,16 @@ footer a{
         margin: .8em;
         /* float: left; */
     }
-      .card-desc, .card-tech{
+      /* .card-desc, .card-tech{
         line-height: 1.6em;
         margin: 1.2em 0;
         display: block;
+    } */
+    .contact h2{
+        font-size: 1.2em;
+    }
+    .contact h1 a{
+        font-size: 1.5em;
     }
 }
 
