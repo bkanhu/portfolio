@@ -10,6 +10,7 @@
     --bg-dark-2: #09090e;
     --text-color-dark: #09090e;
     --text-color-white: #ffffff;
+    --secondary-white: #aaddcc26;
     --asset-color: #ff002e;
 }
 /* scrollbar */
@@ -158,6 +159,17 @@ nav > div > a{
     background: var(--bg-dark-1);
     color: var(--text-color-white);
     transition: 180ms ease-in;
+}
+/*project section*/
+.card{
+    background: var(--secondary-white);
+    /* background: var(--asset-color); */
+    margin: 0 auto; /* Added */
+    padding: 2em;
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    /* position: relative; */
+    /* align-content: center; */
 }
 .contact .social{
     margin-bottom: 2em;
