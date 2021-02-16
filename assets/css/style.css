@@ -267,6 +267,10 @@ footer a{
         font-size: 1.5em !important;
         line-height: 1em !important;
         max-width: 80vw !important;
+        padding-bottom: 1.62em;
+    }
+    .hero h1 span{
+        padding-bottom: 2em;
     }
     p{
         font-size: 1.3em !important;
