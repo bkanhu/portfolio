@@ -32,8 +32,11 @@
    } 
 a{
     text-decoration: none;
+    color: var(--bg-dark-2);
 }
-
+ul {
+    list-style: none;
+}
 html{
 
     scroll-behavior: smooth !important;
@@ -122,9 +125,28 @@ nav > div > a{
     border-radius: 50%;
 }
 .social .fab:hover{
-    background: var(--bg-dark-2);
+    /* background: var(--bg-dark-2); */
     transition: 220ms ease-in;
-    transform: rotate(20deg);
+    animation: rotateEffect ease-in 500ms;
+    background: var(--asset-color);
+    /* transition: 300ms ease-in; */
+}
+@keyframes rotateEffect{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(120deg);
+    }
+    75%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .container h2{
     font-size: 2em;
@@ -151,7 +173,7 @@ nav > div > a{
     font-size: 14px;
     height: 32px;
     padding: 0 1em;
-    margin: 0 .25em;
+    margin: .2em .25em;
     font-weight: 600;
     cursor: -webkit-grabbing;
 }
@@ -177,6 +199,7 @@ nav > div > a{
 }
 .card-desc, .card-tech{
     line-height: 2em;
+    display: block;
 }
 .card-tech{
 
@@ -201,7 +224,7 @@ nav > div > a{
     padding-left: .2em;
 }
 .contact h2{
-    line-height: .2em;
+    /* line-height: .2em; */
     font-weight: 500;
 }
 .contact h4{
@@ -212,9 +235,13 @@ nav > div > a{
     color: var(--asset-color);
     align-content: center;
 }
+.contact a:hover{
+    color: var(--asset-color);
+    transition: 300ms ease-in;
+}
 footer{
     text-align: center;
-    background: cornsilk;
+    background: var(--secondary-white);
     padding-bottom: 1.2em;
 }
 footer a{
@@ -244,6 +271,7 @@ footer a{
         display: inline;
         float: none;
     }
+
     .row{
         display: flex;
         flex-direction: column;
@@ -269,5 +297,18 @@ footer a{
         display: block;
         text-align: left;
       }
+      .hero-name > span {
+        /* font-size: .5em; */
+        line-height: 1.5em;
+    }
+    .image-responsive{
+        margin: .8em;
+        /* float: left; */
+    }
+      .card-desc, .card-tech{
+        line-height: 1.6em;
+        margin: 1.2em 0;
+        display: block;
+    }
 }
 
