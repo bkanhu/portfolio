@@ -56,7 +56,7 @@ nav > div {
     float: right;
 }
 nav > div > a{
-    padding: 5em 0.5em;
+    padding: .5em 0.5em;
 }
 
 .hamburger-icon{
@@ -162,6 +162,7 @@ nav > div > a{
 }
 /*project section*/
 .card{
+    /* width: 80%; */
     background: var(--secondary-white);
     /* background: var(--asset-color); */
     margin: 0 auto; /* Added */
@@ -170,6 +171,26 @@ nav > div > a{
     margin-bottom: 10px; /* Added */
     /* position: relative; */
     /* align-content: center; */
+}
+.card-heading{
+    line-height: 2em;
+}
+.card-desc, .card-tech{
+    line-height: 2em;
+}
+.card-tech{
+
+    margin-bottom: 1.2em;
+}
+.card a{
+    /* margin: 2.83em 0 !important; */
+    background: var(--bg-dark-1);
+    color: var(--text-color-white);
+    /* opacity: .6; */
+    padding: .82em;
+    font-weight: 800;
+    /* line-height: 2em; */
+    /* text-align: center; */
 }
 .contact .social{
     margin-bottom: 2em;
