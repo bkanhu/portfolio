@@ -10,8 +10,10 @@
     --bg-dark-2: #09090e;
     --text-color-dark: #09090e;
     --text-color-white: #ffffff;
-    --secondary-white: #aaddcc26;
-    --asset-color: #ff002e;
+    /* --secondary-white: #aaddcc26;old */
+    --secondary-white: #83b2ff29;
+    /* --asset-color: #ff002e;old */
+    --asset-color:#ff555e;
 }
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -251,7 +253,9 @@ nav > div > a{
 .contact a:hover{
     color: var(--asset-color);
     transition: 300ms ease-in;
+    text-decoration: underline;
 }
+
 footer{
     text-align: center;
     background: var(--secondary-white);
