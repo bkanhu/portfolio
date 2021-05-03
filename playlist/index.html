@@ -18,16 +18,11 @@
             font-family: 'Montserrat';
         }
 
-        a {
-            text-decoration: none;
+       h1, a {
             color: #f1f1f1;
+            text-decoration: none;
             /* display: inline-block; */
         }
-
-        * {
-            box-sizing: border-box;
-        }
-
         .row::after {
             content: "";
             clear: both;
@@ -35,12 +30,12 @@
         }
 
         [class*="col-"] {
-            float: left;
+            /* float: left; */
             padding: 50px;
         }
 
         .col-6 {
-            width: 50%;
+            /* width: 50%; */
         }
 
         h2 {
@@ -48,8 +43,8 @@
         }
 
         body>div>div>div>a>div>img {
-            height: 300px;
-            width: 100%;
+            /* height: 300px; */
+            /* width: 100%; */
         }
 
         .container a div {
@@ -59,7 +54,7 @@
 
         @media screen and (max-width: 450px) {
             [class*="col-"] {
-                float: left;
+                /* float: left; */
                 padding: 15px;
             }
 
@@ -73,13 +68,14 @@
 
 <body>
     <div class="container">
+        <h1>Spotify Playlist by Kanhu</h1>
         <div class="row">
 
             <div class="col-6">
 
                 <a href="https://open.spotify.com/playlist/0Jgsz8Mj3O1Jz6ez9QRUEF" class="playlist">
                     <div class="">
-                        <img src="roadtrip-ultimate-hindi.JPG" alt="">
+                        <!-- <img src="roadtrip-ultimate-hindi.JPG" alt=""> -->
                         <h2>Roadtrip Ultimate - Hindi</h2>
                     </div>
                 </a>
@@ -88,7 +84,7 @@
 
                 <a href="https://open.spotify.com/playlist/4mX7nqbu1dNhdC3b0hQq27" class="playlist">
                     <div class="">
-                        <img src="indian-patriotic.JPG" alt="">
+                        <!-- <img src="indian-patriotic.JPG" alt=""> -->
                         <h2>Indian Patriotic</h2>
                     </div>
                 </a>
@@ -97,16 +93,25 @@
                 <a href="https://open.spotify.com/playlist/7G5KoYkdljOANPI3A1VSw9" class="playlist">
 
                     <div class="">
-                        <img src="bottle.png" alt="">
+                        <!-- <img src="bottle.png" alt=""> -->
                         <h2>Indie</h2>
                     </div>
                 </a>
             </div>
             <div class="col-6">
+                
+                <a href="https://open.spotify.com/playlist/4WmgWbQXMfotFH8Z1LGKrL" class="playlist">
+                    <div class="">
+                        <!-- <img src="" alt=""> -->
+                        <h2>Old Is Gold - Hindi</h2>
+                    </div>
+            </a>
+        </div> 
+            <div class="col-6">
 
                 <a href="https://open.spotify.com/playlist/08Rl4yfBm4apz58yZx2T86" class="playlist">
                     <div class="">
-                        <img src="" alt="">
+                        <!-- <img src="" alt=""> -->
                         <h2>Happy Hour Hindi</h2>
                     </div>
                 </a>
@@ -116,23 +121,16 @@
 
                 <a href="https://open.spotify.com/playlist/1wU9aaXzQxUlRWS7XJmrsc" class="playlist">
                     <div class="">
-                        <img src="light.png" alt="">
+                        <!-- <img src="light.png" alt=""> -->
                         <h2>Hindi Sad Hour</h2>
                     </div>
                 </a>
             </div>
-            <!-- <div class="col-6">
-                
-                <a href="https://open.spotify.com/playlist/7G5KoYkdljOANPI3A1VSw9" class="playlist">
-                    <div class="">
-                        <img src="" alt="">
-                        <h2>Indie</h2>
-                    </div>
-            </a>
-        </div> -->
+
         </div>
     </div>
     </div>
+    <br><br>
 </body>
 
 </html>
