@@ -268,10 +268,10 @@ footer a{
 /*media query*/
 @media screen and (max-width:550px){
     .hero h1{
-        font-size: 1.5em !important;
+        /* font-size: 1.5em !important;  */
         line-height: 1em !important;
         max-width: 80vw !important;
-        padding-bottom: 1.62em;
+        padding-bottom: 1.2em;
     }
     .hero h1 span{
         padding-bottom: 2em;
@@ -281,7 +281,7 @@ footer a{
         font-size: 1.3em !important;
     }
     .contact h1{
-        font-size: 1.12em !important;
+        font-size: 1.8em !important;
     }
     .contact h1 a{
         font-size: 1.12em !important;
