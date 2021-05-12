@@ -1,4 +1,3 @@
-#portfolio 
+# portfolio 
 
-
-live preview: http://kanhu.netlify.app/
+live preview: http://bkanhu.me/
